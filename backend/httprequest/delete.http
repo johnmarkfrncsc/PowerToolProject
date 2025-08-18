@@ -1,0 +1,7 @@
+
+DELETE http://localhost:3000/users/689615fb0fa14238549a5720
+Content-Type: application/json
+
+
+//Input the id of the item you want to delete
+// Example: http://localhost:3000/users/689615fb0fa14238549a5720

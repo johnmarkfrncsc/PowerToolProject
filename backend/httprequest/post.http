@@ -1,0 +1,10 @@
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{ 
+    "brand": "Toyohama",
+    "item": "TY5500i",
+    "category": "Generator",
+    "description": "INVERTER GASOLINE GENERATOR",
+    "price" : "24,000"
+}

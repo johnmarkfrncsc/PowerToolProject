@@ -1,0 +1,6 @@
+PUT http://localhost:3000/users/689616100fa14238549a5721
+Content-Type: application/json
+
+{
+  "name": "Shan Doe"
+}
