@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar.jsx";
-import bg from "../assets/bg.jpg";
+import MainImage from "../assets/MainImage.jpg";
 
 const Homepage = () => {
   return (
@@ -8,8 +8,8 @@ const Homepage = () => {
       <div className="bg-white h-screen w-full text-black">
         <Navbar />
 
-        <main className="flex flex-col md:flex-row justify-center p-10 bg-[url('./assets/MainImage.jpg')] bg-cover bg-center ">
-          <article className="">
+        <main className="flex p-10 bg-[url('./assets/MainImage.jpg')] bg-cover bg-center md:invisible ">
+          <article className="flex-col md:visible">
             <h1 className="text-2xl font-bold text-base-100">
               Power Your Project with Precision and{" "}
               <span className="text-2xl font-bold text-orange-400">
@@ -25,6 +25,14 @@ const Homepage = () => {
               Explore Products
             </button>
           </article>
+
+          <figure>
+            <img
+              className="hidden md:block md:visible w-200"
+              src={MainImage}
+              alt=""
+            />
+          </figure>
         </main>
       </div>
     </>

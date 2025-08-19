@@ -10,7 +10,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="drawer md:drawer-open md:drawer-toggle size-10">
+        <div className="drawer md:drawer-toggle size-10">
           <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content flex flex-col items-center justify-center size-10">
             {/* Page content here */}
