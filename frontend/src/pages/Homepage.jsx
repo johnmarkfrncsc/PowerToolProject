@@ -1,18 +1,19 @@
 import React from "react";
 import Navbar from "../components/common/Navbar.jsx";
 import FeaturedSection from "../components/home/FeaturedSection.jsx";
-
 import HeroSection from "../components/home/HeroSection.jsx";
+import AboutUsSection from "../components/home/AboutUsSection.jsx";
 
 const Homepage = () => {
   return (
     <>
-      <div className="bg-white h-screen w-full text-black">
+      <div className="bg-gray-50 h-screen w-full text-black">
         <Navbar />
 
         <HeroSection />
 
         <FeaturedSection />
+        <AboutUsSection />
       </div>
     </>
   );
