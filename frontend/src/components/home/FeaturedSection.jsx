@@ -1,16 +1,16 @@
 import React from "react";
-import Card from "../../components/Card";
+import Card from "../common/Card";
 import bg from "../../assets/bg.jpg";
-import impactDriver from "../../assets/impactDriver.jpg";
-import impactDrill from "../../assets/impactDrill.jpg";
-import circularSaw from "../../assets/circularSaw.jpg";
+import impactDriver from "../../assets/FeaturedImage/impactDriver.jpg";
+import impactDrill from "../../assets/FeaturedImage/impactDrill.jpg";
+import circularSaw from "../../assets/FeaturedImage/circularSaw.jpg";
 
 const featuredSection = () => {
   return (
     <>
-      <section className="bg-white w-full h-screen p-5 text-center">
-        <h1>Featured Products</h1>
-        <p>
+      <section className="bg-gray-50 w-full min-h-screen p-5 text-center">
+        <h1 className="text-2xl font-bold">Featured Products</h1>
+        <p className="textarea-sm font-light mb-8">
           Our best-selling tools, engineered for peak performance and
           durability.
         </p>
