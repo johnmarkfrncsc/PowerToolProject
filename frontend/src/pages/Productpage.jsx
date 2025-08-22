@@ -3,6 +3,7 @@ import Navbar from "../components/common/Navbar";
 import ProductHero from "../components/product/ProductHero";
 import ProductFilter from "../components/product/ProductFilter";
 import ProductContent from "../components/product/ProductContent";
+import Footer from "../components/common/Footer";
 
 const Productpage = () => {
   return (
@@ -15,6 +16,7 @@ const Productpage = () => {
           <ProductContent />
         </div>
       </main>
+      <Footer />
     </>
   );
 };

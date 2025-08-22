@@ -3,7 +3,7 @@ import React from "react";
 const ProductFilter = () => {
   return (
     <>
-      <div className="dropdown md:hidden ">
+      <div className="dropdown text-base-100 md:hidden">
         <div
           tabIndex={0}
           role="button"
@@ -49,17 +49,17 @@ const ProductFilter = () => {
         </ul>
       </div>
 
+      {/* change filter icon to aside filter when in md-lg screen */}
+
       <aside
         className="hidden md:flex flex-col md:w-1/4 p-6 bg-white rounded-xl shadow-lg h-min md:sticky top-10 
         filter-sidebar md:transform-none "
       >
-        <h3 className="text-2xl font-bold mb-6 text-gray-900">Filters</h3>
+        <h3 className="text-2xl font-bold mb-6 text-black">Filters</h3>
 
         <div className="space-y-6">
           <div>
-            <h4 className="font-semibold text-lg mb-2 text-gray-800">
-              Category
-            </h4>
+            <h4 className="font-semibold text-lg mb-2 text-black">Category</h4>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>Drills & Drivers</li>
               <li>Saw and Blades</li>
@@ -68,7 +68,7 @@ const ProductFilter = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg mb-2 text-gray-800">Brand</h4>
+            <h4 className="font-semibold text-lg mb-2 text-black">Brand</h4>
             <div className="space-y-2 text-sm text-gray-600">
               <ul>
                 <li>Brand 1</li>
@@ -79,7 +79,7 @@ const ProductFilter = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg mb-2 text-gray-800">
+            <h4 className="font-semibold text-lg mb-2 text-black">
               Price Range
             </h4>
             <input

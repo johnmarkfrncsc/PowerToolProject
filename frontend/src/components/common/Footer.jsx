@@ -1,6 +1,6 @@
 import React from "react";
 
-const FooterSection = () => {
+const Footer = () => {
   return (
     <>
       <footer className="w-full footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-2 md:hidden">
@@ -38,4 +38,4 @@ const FooterSection = () => {
   );
 };
 
-export default FooterSection;
+export default Footer;
