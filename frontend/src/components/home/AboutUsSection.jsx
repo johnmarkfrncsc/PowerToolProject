@@ -4,7 +4,7 @@ import AboutUsCard from "../common/AboutUsCard.jsx";
 const AboutUsSection = () => {
   return (
     <>
-      <section className="w-screen min-h-screen bg-gray-50 text-center  ">
+      <section className="w-full min-h-screen bg-gray-50 text-center  ">
         <h1 className="text-2xl font-bold">Why Choose Us?</h1>
         <p className="textarea-sm font-light mb-4">
           We're committed to delivering excellence in every tool we make.

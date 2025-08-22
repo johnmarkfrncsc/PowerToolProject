@@ -4,6 +4,7 @@ import FeaturedSection from "../components/home/FeaturedSection.jsx";
 import HeroSection from "../components/home/HeroSection.jsx";
 import AboutUsSection from "../components/home/AboutUsSection.jsx";
 import CallActionSection from "../components/home/CallActionSection.jsx";
+import Footer from "../components/common/Footer.jsx";
 
 const Homepage = () => {
   return (
@@ -12,10 +13,11 @@ const Homepage = () => {
         <Navbar />
 
         <HeroSection />
-
         <FeaturedSection />
         <AboutUsSection />
         <CallActionSection />
+
+        <Footer />
       </div>
     </>
   );
