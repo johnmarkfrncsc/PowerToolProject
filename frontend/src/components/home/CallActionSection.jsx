@@ -3,8 +3,8 @@ import React from "react";
 const CallActionSection = () => {
   return (
     <>
-      <section className="w-full">
-        <div className="bg-orange-500 text-white">
+      <section>
+        <div className="bg-orange-500 text-white py-4">
           <div className="container mx-auto flex flex-col items-center justify-between p-4">
             <h1 className="text-2xl font-bold">Forge Your Next Project</h1>
             <p className="py-4 font-light text-sm">

@@ -1,5 +1,6 @@
 import "./app.css";
 import Homepage from "./pages/Homepage.jsx";
+import Productpage from "./pages/Productpage.jsx";
 
 // const fetchUsers = async () => {
 //   const response = await axios.get(`http://localhost:3000/users`);
@@ -23,7 +24,8 @@ import Homepage from "./pages/Homepage.jsx";
 function App() {
   return (
     <>
-      <Homepage />
+      {/* <Homepage /> */}
+      <Productpage />
     </>
   );
 }

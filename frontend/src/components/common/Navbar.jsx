@@ -39,7 +39,7 @@ const Navbar = () => {
               aria-label="close sidebar"
               className="drawer-overlay"
             ></label>
-            <ul className="menu bg-base-200 text-base-content min-h-full w-50 p-4">
+            <ul className="menu bg-white text-orange-500 text-lg  border-y-4 border-r-4 min-h-full w-50 p-4 ">
               {/* Sidebar content here */}
               <li>
                 <a href="">Home</a>
