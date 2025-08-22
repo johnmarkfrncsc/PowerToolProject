@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -42,19 +43,19 @@ const Navbar = () => {
             <ul className="menu bg-white text-orange-500 text-lg  border-y-4 border-r-4 min-h-full w-50 p-4 ">
               {/* Sidebar content here */}
               <li>
-                <a href="">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="">Product</a>
+                <Link to="/products">Product</Link>
               </li>
               <li>
-                <a href="">About</a>
+                <Link to="">About</Link>
               </li>
               <li>
-                <a href="">Contact</a>
+                <Link to="">Contact</Link>
               </li>
               <li>
-                <a href="">Shop Now</a>
+                <Link to="/products">Shop Now</Link>
               </li>
             </ul>
           </div>
@@ -62,21 +63,21 @@ const Navbar = () => {
 
         <ul className="hidden md:flex flex-col md:flex-row md:pl-20 gap-10 ">
           <li>
-            <a href="">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="">Product</a>
+            <Link to="/products">Product</Link>
           </li>
           <li>
-            <a href="">About</a>
+            <Link to="">About</Link>
           </li>
           <li>
-            <a href="">Contact</a>
+            <Link to="">Contact</Link>
           </li>
         </ul>
 
         <button className="btn bg-amber-600 border-0 shadow-none rounded-3xl hidden md:block">
-          Shop Now
+          <Link to="/products">Shop Now</Link>
         </button>
       </div>
     </>

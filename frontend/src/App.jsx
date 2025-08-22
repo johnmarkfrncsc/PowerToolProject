@@ -1,6 +1,8 @@
 import "./app.css";
-import Homepage from "./pages/Homepage.jsx";
-import Productpage from "./pages/Productpage.jsx";
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRoutes from "./Routes.jsx";
+import Navbar from "./components/common/Navbar.jsx";
+import Footer from "./components/common/Footer.jsx";
 
 // const fetchUsers = async () => {
 //   const response = await axios.get(`http://localhost:3000/users`);
@@ -24,8 +26,11 @@ import Productpage from "./pages/Productpage.jsx";
 function App() {
   return (
     <>
-      {/* <Homepage /> */}
-      <Productpage />
+      <Router>
+        <Navbar />
+        <AppRoutes />
+        <Footer />
+      </Router>
     </>
   );
 }

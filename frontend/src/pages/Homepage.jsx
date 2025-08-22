@@ -1,23 +1,16 @@
-import React from "react";
-import Navbar from "../components/common/Navbar.jsx";
 import FeaturedSection from "../components/home/FeaturedSection.jsx";
 import HeroSection from "../components/home/HeroSection.jsx";
 import AboutUsSection from "../components/home/AboutUsSection.jsx";
 import CallActionSection from "../components/home/CallActionSection.jsx";
-import Footer from "../components/common/Footer.jsx";
 
 const Homepage = () => {
   return (
     <>
-      <div className="bg-gray-50 h-screen w-full text-black">
-        <Navbar />
-
+      <div className="bg-gray-50 min-h-screen w-full text-black">
         <HeroSection />
         <FeaturedSection />
         <AboutUsSection />
         <CallActionSection />
-
-        <Footer />
       </div>
     </>
   );
