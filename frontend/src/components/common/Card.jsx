@@ -11,7 +11,7 @@ const Card = ({ image, title, description }) => {
           <h2 className="card-title">{title}</h2>
           <p>{description}</p>
           <div className="card-actions justify-center">
-            <button className="btn bg-orange-400 border-0 shadow-none">
+            <button className="btn bg-orange-500 border-0 shadow-none">
               Buy Now
             </button>
           </div>

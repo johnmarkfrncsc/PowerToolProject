@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="navbar bg-white text-black flex gap-10 justify-between">
         <div className="flex bg-white shadow-none border-none text-xl font-bold p-0 ">
           <a className=" text-base-100">
-            TORQUE<span className="text-orange-400">PRO</span>
+            TORQUE<span className="text-orange-500">PRO.</span>
           </a>
         </div>
 

@@ -9,7 +9,7 @@ const HeroSection = () => {
           <article className="flex-col md:visible">
             <h1 className="text-2xl font-bold text-base-100">
               Power Your Project with Precision and{" "}
-              <span className="text-2xl font-bold text-orange-400">
+              <span className="text-2xl font-bold text-orange-500">
                 Strength
               </span>
               .

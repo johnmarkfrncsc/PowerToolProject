@@ -3,6 +3,7 @@ import Navbar from "../components/common/Navbar.jsx";
 import FeaturedSection from "../components/home/FeaturedSection.jsx";
 import HeroSection from "../components/home/HeroSection.jsx";
 import AboutUsSection from "../components/home/AboutUsSection.jsx";
+import CallActionSection from "../components/home/CallActionSection.jsx";
 
 const Homepage = () => {
   return (
@@ -14,6 +15,7 @@ const Homepage = () => {
 
         <FeaturedSection />
         <AboutUsSection />
+        <CallActionSection />
       </div>
     </>
   );
