@@ -1,5 +1,4 @@
 import Card from "../common/Card";
-import impactDrill from "../../assets/FeaturedImage/impactDrill.jpg";
 
 const ProductContent = () => {
   return (

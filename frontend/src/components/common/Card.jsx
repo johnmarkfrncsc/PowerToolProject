@@ -3,8 +3,6 @@ import axios from "axios";
 
 const Card = () => {
   const [products, setProducts] = useState([]);
-
-  console.log(products);
   useEffect(() => {
     const getProduct = async () => {
       try {
@@ -30,8 +28,10 @@ const Card = () => {
           <div className="card-body">
             <h2 className="card-title">{product.item}</h2>
             <p className="text-orange-600 font-bold">{product.price}</p>
-            <p>{product.category}</p>
-            <p>{product.brand}</p>
+            <p>
+              {product.brand} <br />
+              {product.category}
+            </p>
             <p>{product.description}</p>
             <div className="card-actions justify-center">
               <button className="btn bg-orange-600 border-0 shadow-none">

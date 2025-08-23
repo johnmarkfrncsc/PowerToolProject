@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <>
       <main className="bg-gray-50 mb-4">
-        <hero className="flex p-10 bg-[url('./assets/MainImage.jpg')] bg-cover bg-center md:invisible md:justify-center ">
+        <div className="flex p-10 bg-[url('./assets/MainImage.jpg')] bg-cover bg-center md:invisible md:justify-center ">
           <article className="flex-col md:visible">
             <h1 className="text-2xl font-bold text-base-100">
               Power Your Project with Precision and{" "}
@@ -30,7 +30,7 @@ const HeroSection = () => {
               alt=""
             />
           </figure>
-        </hero>
+        </div>
       </main>
     </>
   );
