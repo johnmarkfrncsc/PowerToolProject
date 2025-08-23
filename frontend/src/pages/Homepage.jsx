@@ -1,6 +1,6 @@
 import FeaturedSection from "../components/home/FeaturedSection.jsx";
 import HeroSection from "../components/home/HeroSection.jsx";
-import AboutUsSection from "../components/home/AboutUsSection.jsx";
+import AboutUsSection from "../components/home/about_us/AboutUsSection.jsx";
 import CallActionSection from "../components/home/CallActionSection.jsx";
 
 const Homepage = () => {

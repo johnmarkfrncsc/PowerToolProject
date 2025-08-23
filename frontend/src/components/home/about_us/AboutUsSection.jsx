@@ -1,5 +1,5 @@
 import React from "react";
-import AboutUsCard from "../common/AboutUsCard.jsx";
+import AboutUsCard from "../about_us/AboutUsCard";
 
 const AboutUsSection = () => {
   return (

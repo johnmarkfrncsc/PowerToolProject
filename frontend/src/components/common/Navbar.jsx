@@ -55,13 +55,16 @@ const Navbar = () => {
                 <Link to="">Contact</Link>
               </li>
               <li>
+                <Link to="/add">Add Product</Link>
+              </li>
+              <li>
                 <Link to="/products">Shop Now</Link>
               </li>
             </ul>
           </div>
         </div>
 
-        <ul className="hidden md:flex flex-col md:flex-row md:pl-20 gap-10 ">
+        <ul className="hidden  md:flex flex-col md:flex-row gap-10 ">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -73,6 +76,9 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="">Contact</Link>
+          </li>
+          <li>
+            <Link to="/add">Add Product</Link>
           </li>
         </ul>
 
