@@ -47,14 +47,9 @@ const AddProductModal = () => {
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content text-center">
           {/* Open the modal using document.getElementById('ID').showModal() method */}
-          <button
-            className="btn"
-            onClick={() => document.getElementById("my_modal_1").showModal()}
-          >
-            open modal
-          </button>
-          <dialog id="my_modal_1" className="modal">
-            <div className="modal-box">
+
+          <div>
+            <div className="">
               <h1 className="pb-4">Add New Product</h1>
               <input
                 type="text"
@@ -108,7 +103,7 @@ const AddProductModal = () => {
                 </form>
               </div>
             </div>
-          </dialog>
+          </div>
         </div>
       </div>
     </>

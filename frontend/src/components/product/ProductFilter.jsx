@@ -89,8 +89,8 @@ const ProductFilter = () => {
               max="500"
             />
             <div className="flex justify-between text-sm text-gray-600 mt-2">
-              <span>$0</span>
-              <span>$500+</span>
+              <span>₱0</span>
+              <span>₱500+</span>
             </div>
           </div>
         </div>

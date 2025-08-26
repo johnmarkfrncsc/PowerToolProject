@@ -27,7 +27,10 @@ const Card = () => {
           </figure>
           <div className="card-body">
             <h2 className="card-title">{product.item}</h2>
-            <p className="text-orange-600 font-bold">{product.price}</p>
+            <p className="text-orange-600 font-bold">
+              ₱ {""}
+              {product.price}.00
+            </p>
             <p>
               {product.brand} <br />
               {product.category}
