@@ -10,7 +10,7 @@ const ProductFilter = () => {
           className="btn bg-orange-600 border-0 text-white m-1"
         >
           Filters
-          <i class="bi bi-filter"></i>
+          <i className="bi bi-filter"></i>
         </div>
         <ul
           tabIndex={0}
@@ -37,11 +37,11 @@ const ProductFilter = () => {
             </details>
           </li>
           <div>
-            <h4 class="font-semibold text-lg mb-2 text-orange-600">
+            <h4 className="font-semibold text-lg mb-2 text-orange-600">
               Price Range
             </h4>
-            <input type="range" class="w-full range-xs" min="0" max="500" />
-            <div class="flex justify-between text-sm text-base-100 mt-2">
+            <input type="range" className="w-full range-xs" min="0" max="500" />
+            <div className="flex justify-between text-sm text-base-100 mt-2">
               <span>0</span>
               <span>500+</span>
             </div>
