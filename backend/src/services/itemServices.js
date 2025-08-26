@@ -2,7 +2,7 @@ import { db } from "../../app.js";
 
 const getAllItem = async () => {
   try {
-    const items = await db.collection("items").find().toArray();
+    const items = await db.collection("items").find().limit(3).toArray();
     return {
       success: true,
       data: items,

@@ -22,7 +22,7 @@ const Card = () => {
           key={product.id}
           className="card bg-white w-80 py-4 md:py-8 md:w-50 lg:w-70 xl:w-90 shadow-md"
         >
-          <figure>
+          <figure className="max-h-100 md:max-h-auto">
             <img src={product.image} alt="Shoes" />
           </figure>
           <div className="card-body">
