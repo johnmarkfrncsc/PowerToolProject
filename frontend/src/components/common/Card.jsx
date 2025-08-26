@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const Card = ({ limit }) => {
+const Card = ({ limit, brand, category, price }) => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     const getProduct = async () => {

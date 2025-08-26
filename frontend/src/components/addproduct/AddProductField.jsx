@@ -87,6 +87,7 @@ const AddProductField = () => {
                 <option value="Saw & Blades">Saw & Blades</option>
                 <option value="Hand Tools">Hand Tools</option>
               </select>
+
               <input
                 type="text"
                 placeholder="Enter Description"
