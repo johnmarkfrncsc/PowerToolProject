@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Productpage from "./pages/Productpage";
-import AddProductPage from "./pages/AddProductPage";
+import AddProductPage from "./pages/AddProductpage";
 
 const AppRoutes = () => {
   return (

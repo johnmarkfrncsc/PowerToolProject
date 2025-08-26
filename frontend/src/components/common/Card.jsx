@@ -35,7 +35,7 @@ const Card = () => {
               {product.brand} <br />
               {product.category}
             </p>
-            <p>{product.description}</p>
+            <p className="text-gray-500">{product.description}</p>
             <div className="card-actions justify-center">
               <button className="btn bg-orange-600 border-0 shadow-none">
                 Buy Now

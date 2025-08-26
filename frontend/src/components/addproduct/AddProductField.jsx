@@ -1,7 +1,7 @@
 import React, { use, useEffect, useState } from "react";
 import axios from "axios";
 
-const AddProductModal = () => {
+const AddProductField = () => {
   // const [field, setField] = useState([]);
 
   // useEffect(() => {
@@ -49,7 +49,7 @@ const AddProductModal = () => {
           {/* Open the modal using document.getElementById('ID').showModal() method */}
 
           <div>
-            <div className="">
+            <div className="flex flex-col gap-4">
               <h1 className="pb-4">Add New Product</h1>
               <input
                 type="text"
@@ -65,20 +65,28 @@ const AddProductModal = () => {
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
               />
-              <input
-                type="text"
-                placeholder="Enter Brand"
-                className="input"
+
+              <select
+                className="h-10 border-2 **:text-black"
                 value={brand}
                 onChange={(e) => setBrand(e.target.value)}
-              />
-              <input
-                type="text"
-                placeholder="Enter Category"
-                className="input"
+              >
+                <option value="">Select brand</option>
+                <option value="toyohama">Toyohama</option>
+                <option value="dewalt">DE WALT</option>
+                <option value="bosch">BOSCH</option>
+              </select>
+
+              <select
+                className="h-10 border-2 **:text-black"
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
-              />
+              >
+                <option value="">Select category</option>
+                <option value="drills & drivers">Drills & Drivers</option>
+                <option value="Saw & Blades">Saw & Blades</option>
+                <option value="Hand Tools">Hand Tools</option>
+              </select>
               <input
                 type="text"
                 placeholder="Enter Description"
@@ -86,6 +94,7 @@ const AddProductModal = () => {
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
               />
+
               <input
                 type="text"
                 placeholder="Enter Image URL"
@@ -93,13 +102,9 @@ const AddProductModal = () => {
                 value={image}
                 onChange={(e) => setImage(e.target.value)}
               />
-              <div className="modal-action">
+              <div>
                 <form onSubmit={handleSubmit}>
                   <button className="btn">Submit</button>
-                </form>
-                <form method="dialog">
-                  {/* if there is a button in form, it will close the modal */}
-                  <button className="btn">Close</button>
                 </form>
               </div>
             </div>
@@ -110,4 +115,4 @@ const AddProductModal = () => {
   );
 };
 
-export default AddProductModal;
+export default AddProductField;
