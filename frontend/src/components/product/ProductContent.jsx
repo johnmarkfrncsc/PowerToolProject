@@ -1,7 +1,7 @@
 import Card from "../common/Card";
 
 const ProductContent = () => {
-  const limit = 10;
+  const limit = 12;
   return (
     <>
       <section className="w-full bg-white text-black flex flex-col flex-wrap md:flex-row justify-center  gap-4">

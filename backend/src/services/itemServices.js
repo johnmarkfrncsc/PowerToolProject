@@ -1,11 +1,20 @@
 import { db } from "../../app.js";
 
-const getAllItem = async (limit) => {
+const getAllItem = async (limit, brand) => {
   try {
-    const parsedLimit = parseInt(limit) || 10;
+    const parsedLimit = parseInt(limit) || 12;
+    console.log(parsedLimit, brand);
+
+    let query = {};
+    if (brand) {
+      query.brand = brand;
+    }
+
+    console.log(query);
+
     const items = await db
       .collection("items")
-      .find()
+      .find(query)
       .limit(parsedLimit)
       .toArray();
     return {
