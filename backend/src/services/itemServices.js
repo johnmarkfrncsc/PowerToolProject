@@ -1,8 +1,13 @@
 import { db } from "../../app.js";
 
-const getAllItem = async () => {
+const getAllItem = async (limit) => {
   try {
-    const items = await db.collection("items").find().limit(3).toArray();
+    const parsedLimit = parseInt(limit) || 10;
+    const items = await db
+      .collection("items")
+      .find()
+      .limit(parsedLimit)
+      .toArray();
     return {
       success: true,
       data: items,

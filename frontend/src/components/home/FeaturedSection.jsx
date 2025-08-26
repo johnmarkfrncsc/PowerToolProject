@@ -1,5 +1,6 @@
 import Card from "../common/Card";
 const featuredSection = () => {
+  const limit = 2;
   return (
     <>
       <section className="bg-gray-50 w-full min-h-screen text-center p-5">
@@ -10,7 +11,7 @@ const featuredSection = () => {
         </p>
 
         <figure className="flex flex-wrap gap-10 justify-center pb-12">
-          <Card />
+          <Card limit={limit} />
         </figure>
       </section>
     </>
