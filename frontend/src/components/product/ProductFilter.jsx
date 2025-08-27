@@ -60,7 +60,7 @@ const ProductFilter = ({
               type="range"
               className="w-full range-xs"
               min="0"
-              max="10000"
+              max="200"
               value={price}
               onChange={changePrice}
             />

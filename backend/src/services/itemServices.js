@@ -3,6 +3,7 @@ import { db } from "../../app.js";
 const getAllItem = async (limit, brand, category, price) => {
   try {
     const parsedLimit = parseInt(limit) || 12;
+
     console.log(parsedLimit, brand, category, price);
 
     /* Filter */
