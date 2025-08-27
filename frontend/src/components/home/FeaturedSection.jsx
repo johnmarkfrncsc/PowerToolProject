@@ -1,6 +1,8 @@
-import Card from "../common/Card";
+import useProduct from "../../hooks/useProduct.js";
+import Card from "../common/Card.jsx";
+
 const featuredSection = () => {
-  const limit = 2;
+  const { products } = useProduct({ limit: 3 });
   return (
     <>
       <section className="bg-gray-50 w-full min-h-screen text-center p-5">
@@ -11,7 +13,7 @@ const featuredSection = () => {
         </p>
 
         <figure className="flex flex-wrap gap-10 justify-center pb-12">
-          <Card limit={limit} />
+          <Card products={products} />
         </figure>
       </section>
     </>
