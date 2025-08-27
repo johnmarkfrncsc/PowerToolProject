@@ -5,7 +5,7 @@ import axios from "axios";
 const useProduct = ({ limit }) => {
   const [brandProduct, setBrand] = useState("");
   const [categoryProduct, setCategory] = useState("");
-  const [priceProduct, setPrice] = useState(0);
+  const [priceProduct, setPrice] = useState("");
   const [products, setProducts] = useState([]);
 
   useEffect(() => {

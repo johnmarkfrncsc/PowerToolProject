@@ -13,7 +13,9 @@ const featuredSection = () => {
         </p>
 
         <figure className="flex flex-wrap gap-10 justify-center pb-12">
-          <Card products={products} />
+          {products.map((product) => {
+            return <Card key={product._id} product={product} />;
+          })}
         </figure>
       </section>
     </>
