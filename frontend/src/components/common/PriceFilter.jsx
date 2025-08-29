@@ -3,6 +3,19 @@ import React from "react";
 import { useState } from "react";
 
 const PriceFilter = ({ onChange, price }) => {
+  const handleInputChange = (e) => {
+    let value = e.target.value;
+    if (value === "") {
+      onChange(e); // Let the parent component handle the empty value
+    } else {
+      const parsedValue = parseInt(value);
+      if (!isNaN(parsedValue)) {
+        e.target.value = parsedValue;
+        onChange(e);
+      }
+    }
+  };
+
   return (
     <>
       <div>
@@ -16,8 +29,18 @@ const PriceFilter = ({ onChange, price }) => {
           value={price}
           onChange={onChange}
         />
+        <input
+          type="number"
+          placeholder="Enter Price"
+          className="input bg-amber-200 text-black"
+          value={price}
+          onChange={handleInputChange}
+        />
         <div className="flex justify-between text-sm text-gray-600 mt-2">
-          <p>selectedPrice{price.toLocaleString()}</p>
+          <p className="text-orange-500">
+            <span className="text-black">Price: </span>
+            {price.toLocaleString()}
+          </p>
         </div>
       </div>
     </>

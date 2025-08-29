@@ -7,11 +7,11 @@ const BrandFilter = ({ onChange, brand }) => {
         <h4 className="font-semibold text-lg mb-2 text-black">Brand</h4>
         <div className="space-y-2 text-sm text-gray-600">
           <select
-            className="h-10 border-2 **:text-black"
+            className="h-10 border-0 outline-0 **:text-black"
             value={brand}
             onChange={onChange}
           >
-            <option value="">Select brand</option>
+            <option value="">Select Brand</option>
             <option value="toyohama">Toyohama</option>
             <option value="dewalt">DE WALT</option>
             <option value="bosch">BOSCH</option>

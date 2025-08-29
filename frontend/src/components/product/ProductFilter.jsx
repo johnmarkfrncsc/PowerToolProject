@@ -75,7 +75,7 @@ const ProductFilter = ({
       {/* change filter icon to aside filter when in md-lg screen */}
 
       <aside
-        className="hidden md:flex flex-col md:w-1/4 p-6 bg-white rounded-xl shadow-lg shadow-orange-400 h-min md:sticky top-10 
+        className="hidden md:flex flex-col md:w-1/4 p-6 ml-4 bg-neutral-100  rounded-xl shadow-lg shadow-orange-400 h-min md:sticky top-10
         filter-sidebar md:transform-none "
       >
         <h3 className="text-2xl font-bold mb-6 text-black">Filters</h3>

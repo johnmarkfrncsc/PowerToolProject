@@ -5,16 +5,18 @@ const CategoryFilter = ({ onChange, category }) => {
     <>
       <div>
         <h4 className="font-semibold text-lg mb-2 text-black">Category</h4>
-        <select
-          className="h-10 border-2  text-gray-600 **:text-black"
-          value={category}
-          onChange={onChange}
-        >
-          <option value="">Select category</option>
-          <option value="drills & drivers">Drills & Drivers</option>
-          <option value="Saw & Blades">Saw & Blades</option>
-          <option value="Hand Tools">Hand Tools</option>
-        </select>
+        <div className="space-y-2 text-sm text-gray-600">
+          <select
+            className="h-10 border-0 outline-0 text-gray-600 **:text-black w-full"
+            value={category}
+            onChange={onChange}
+          >
+            <option value="">Select Category</option>
+            <option value="drills & drivers">Drills & Drivers</option>
+            <option value="Saw & Blades">Saw & Blades</option>
+            <option value="Hand Tools">Hand Tools</option>
+          </select>
+        </div>
       </div>
     </>
   );

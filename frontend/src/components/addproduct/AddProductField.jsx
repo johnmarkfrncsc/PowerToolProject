@@ -72,9 +72,9 @@ const AddProductField = () => {
                 onChange={(e) => setBrand(e.target.value)}
               >
                 <option value="">Select brand</option>
-                <option value="toyohama">Toyohama</option>
-                <option value="dewalt">DE WALT</option>
-                <option value="bosch">BOSCH</option>
+                <option value="Toyohama">Toyohama</option>
+                <option value="Dewalt">DE WALT</option>
+                <option value="Bosch">BOSCH</option>
               </select>
 
               <select
@@ -83,7 +83,7 @@ const AddProductField = () => {
                 onChange={(e) => setCategory(e.target.value)}
               >
                 <option value="">Select category</option>
-                <option value="drills & drivers">Drills & Drivers</option>
+                <option value="Drills & Drivers">Drills & Drivers</option>
                 <option value="Saw & Blades">Saw & Blades</option>
                 <option value="Hand Tools">Hand Tools</option>
               </select>

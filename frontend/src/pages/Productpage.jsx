@@ -28,7 +28,7 @@ const Productpage = () => {
             changeCategory={(e) => setCategory(e.target.value)}
             changePrice={(e) => setPrice(Number(e.target.value))}
           />
-          <section className="w-full bg-white text-black flex flex-col flex-wrap md:flex-row justify-center  gap-4">
+          <section className="w-full bg-white text-black flex flex-col flex-wrap md:flex-row justify-center  gap-4 mb-4">
             {products.map((product) => {
               return <Card key={product._id} product={product} />;
             })}
