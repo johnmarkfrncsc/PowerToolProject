@@ -29,13 +29,25 @@ const PriceFilter = ({ onChange, price }) => {
           value={price}
           onChange={onChange}
         />
-        <input
-          type="number"
-          placeholder="Enter Price"
-          className="input bg-amber-200 text-black"
-          value={price}
-          onChange={handleInputChange}
-        />
+        <div>
+          <div className="flex justify-betweeen gap-2 **:w-full">
+            <input
+              type="number"
+              placeholder="0"
+              className="input bg-amber-200 text-black mb-1 rounded-3xl"
+              value={price}
+              onChange={handleInputChange}
+            />
+            <input
+              type="number"
+              placeholder="200"
+              className="input bg-amber-200 text-black rounded-3xl"
+              value={price}
+              onChange={handleInputChange}
+            />
+          </div>
+        </div>
+
         <div className="flex justify-between text-sm text-gray-600 mt-2">
           <p className="text-orange-500">
             <span className="text-black">Price: </span>
