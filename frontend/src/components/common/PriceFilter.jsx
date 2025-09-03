@@ -24,7 +24,7 @@ const PriceFilter = ({ onChange, price }) => {
           type="range"
           className="w-full text-orange-secondary"
           min="0"
-          max="200"
+          max="2000"
           step="1"
           value={price}
           onChange={onChange}
@@ -40,7 +40,7 @@ const PriceFilter = ({ onChange, price }) => {
             />
             <input
               type="number"
-              placeholder="200"
+              placeholder="2000"
               className="input bg-amber-200 text-black rounded-3xl"
               value={price}
               onChange={handleInputChange}
