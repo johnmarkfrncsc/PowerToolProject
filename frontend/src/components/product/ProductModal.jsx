@@ -5,7 +5,7 @@ const ProductModal = ({ open, onClose, product }) => {
 
   return (
     <div className="fixed inset-0  backdrop-blur-xs flex items-center justify-center z-50">
-      <div className="bg-neutral-50 p-8 rounded-lg min-w-[300px] relative">
+      <div className="bg-neutral-50 p-8 rounded-lg min-w-[300px] relative flex flex-col items-center m-8">
         <button
           onClick={onClose}
           className="absolute top-2.5 right-2.5 text-2xl text-gray-600 hover:text-gray-800"
@@ -16,18 +16,21 @@ const ProductModal = ({ open, onClose, product }) => {
         <img
           src={product.image}
           alt={product?.name}
-          className="mb-2 max-h-40 mx-auto"
+          className="mb-2 max-h-60 md:max-h-auto"
         />
-        <p className="mb-2">{product?.description}</p>
-        <p className="mb-2">
-          <strong>Brand:</strong> {product?.brand}
-        </p>
-        <p className="mb-2">
-          <strong>Category:</strong> {product?.category}
-        </p>
-        <p className="font-medium mb-4">
-          <strong>Price:</strong> ₱{product?.price}.00
-        </p>
+        <div>
+          <p className="mb-2">{product?.description}</p>
+          <p className="mb-2">
+            <strong>Brand:</strong> {product?.brand}
+          </p>
+          <p className="mb-2">
+            <strong>Category:</strong> {product?.category}
+          </p>
+          <p className="font-medium mb-4">
+            <strong>Price:</strong> ₱{product?.price}.00
+          </p>
+        </div>
+
         <button className="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
           Confirm Purchase
         </button>
