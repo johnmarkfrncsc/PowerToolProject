@@ -5,14 +5,13 @@ const ProductModal = ({ open, onClose, product }) => {
 
   if (!open) return null;
 
-  // Split description into sentences
   const sentences = product?.description ? product.description.split(".") : [];
   const firstSentence = sentences[0] ? sentences[0] + "." : "";
   const rest = sentences.slice(1).join(".") ? sentences.slice(1).join(".") : "";
 
   return (
     <div className="fixed inset-0 backdrop-blur-xs flex items-center justify-center z-50">
-      <div className="bg-neutral-50 border-2 border-gray-200 m-8 p-4 rounded-lg min-w-[200px] relative flex flex-col items-center ">
+      <div className="bg-neutral-50 border-2 border-gray-200 m-8 p-4 rounded-lg min-w-[200px] relative flex flex-col items-center max-h-[90vh] overflow-y-scroll ">
         <button
           onClick={onClose}
           className="absolute top-2.5 right-2.5 text-2xl text-gray-600 hover:text-gray-800"

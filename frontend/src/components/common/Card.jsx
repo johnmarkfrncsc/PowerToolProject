@@ -6,11 +6,11 @@ const Card = ({ product }) => {
 
   return (
     <div className="card bg-red-200 w-auto h-fit py-4 md:w-50 lg:w-70 xl:w-90 shadow-md">
-      <h2 className="card-title">{product.ItemCode}</h2>
       <figure className="max-h-100 md:max-h-auto">
         <img src={product.image} alt="Shoes" />
       </figure>
       <div className="card-body">
+        <h2 className="card-title">{product.ItemCode}</h2>
         <h2 className="card-title">{product.item}</h2>
         <p className="text-orange-600 font-bold">
           ₱ {""}
