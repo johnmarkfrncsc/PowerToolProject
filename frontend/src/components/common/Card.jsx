@@ -6,6 +6,7 @@ const Card = ({ product }) => {
 
   return (
     <div className="card bg-red-200 w-auto h-fit py-4 md:w-50 lg:w-70 xl:w-90 shadow-md">
+      <h2 className="card-title">{product.ItemCode}</h2>
       <figure className="max-h-100 md:max-h-auto">
         <img src={product.image} alt="Shoes" />
       </figure>
@@ -19,7 +20,7 @@ const Card = ({ product }) => {
           {product.brand} <br />
           {product.category}
         </p>
-        <p className="text-gray-500 hidden">{product.description}</p>
+        <p className="text-gray-500 hidden ">{product.description}</p>
         <div className="card-actions justify-center">
           <button
             className="btn bg-orange-600 border-0 shadow-none"
@@ -33,6 +34,7 @@ const Card = ({ product }) => {
         open={modalOpen}
         onClose={() => setModalOpen(false)}
         product={{
+          ItemCode: product.ItemCode,
           name: product.item,
           image: product.image,
           description: product.description,

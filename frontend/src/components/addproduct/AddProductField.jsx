@@ -22,6 +22,7 @@ const AddProductField = () => {
   const [category, setCategory] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("");
+  const [ItemCode, setItemCode] = useState("");
 
   const handleSubmit = async () => {
     const field = {
@@ -31,6 +32,7 @@ const AddProductField = () => {
       category: category,
       description: description,
       image: image,
+      ItemCode: ItemCode,
     };
 
     try {
@@ -53,7 +55,14 @@ const AddProductField = () => {
               <h1 className="pb-4">Add New Product</h1>
               <input
                 type="text"
-                placeholder="Enter Item"
+                placeholder="Enter Item Code"
+                className="input"
+                value={ItemCode}
+                onChange={(e) => setItemCode(e.target.value)}
+              />
+              <input
+                type="text"
+                placeholder="Enter Item Name"
                 className="input"
                 value={item}
                 onChange={(e) => setItem(e.target.value)}

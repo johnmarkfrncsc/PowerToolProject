@@ -2,8 +2,14 @@ import itemServices from "../../services/itemServices.js";
 
 const getAllItem = async (req, res) => {
   try {
-    const { limit, brand, category, price } = req.query;
-    const result = await itemServices.getAllItem(limit, brand, category, price);
+    const { limit, brand, category, price, ItemCode } = req.query;
+    const result = await itemServices.getAllItem(
+      limit,
+      brand,
+      category,
+      price,
+      ItemCode
+    );
     res.status(200).json(result);
   } catch (error) {}
 };

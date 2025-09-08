@@ -1,16 +1,17 @@
 import { db } from "../../app.js";
 
-const getAllItem = async (limit, brand, category, price) => {
+const getAllItem = async (limit, brand, category, price, ItemCode) => {
   try {
     const parsedLimit = parseInt(limit) || 12;
 
-    console.log(parsedLimit, brand, category, price);
+    console.log(parsedLimit, brand, category, price, ItemCode);
 
     /* Filter */
     const query = {};
 
     if (brand) query.brand = { $regex: brand, $options: "i" }; //"i" -> toLowerCase
     if (category) query.category = { $regex: category, $options: "i" }; //"i" -> toLowerCase
+    if (ItemCode) query.ItemCode = { $regex: ItemCode, $options: "i" }; //"i" -> toLowerCase
     if (price) query.price = price;
 
     console.log(query);

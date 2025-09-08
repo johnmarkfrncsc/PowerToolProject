@@ -7,12 +7,13 @@ const useProduct = ({ limit }) => {
   const [categoryProduct, setCategory] = useState("");
   const [priceProduct, setPrice] = useState("");
   const [products, setProducts] = useState([]);
+  const [ItemCode, setItemCode] = useState("");
 
   useEffect(() => {
     const getProduct = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/items?limit=${limit}&brand=${brandProduct}&category=${categoryProduct}&price=${priceProduct}`
+          `http://localhost:3000/items?limit=${limit}&brand=${brandProduct}&category=${categoryProduct}&price=${priceProduct}&itemcode=${ItemCode}`
         );
         setProducts(response.data.data);
       } catch (error) {
@@ -20,7 +21,7 @@ const useProduct = ({ limit }) => {
       }
     };
     getProduct();
-  }, [limit, brandProduct, categoryProduct, priceProduct]);
+  }, [limit, brandProduct, categoryProduct, priceProduct, ItemCode]);
   return {
     products,
     brandProduct,
@@ -29,6 +30,8 @@ const useProduct = ({ limit }) => {
     setCategory,
     priceProduct,
     setPrice,
+    ItemCode,
+    setItemCode,
   };
 };
 
