@@ -58,7 +58,7 @@ const Navbar = () => {
                 <Link to="/add">Add Product</Link>
               </li>
               <li>
-                <Link to="/products">Shop Now</Link>
+                <Link to="/cart">View Cart</Link>
               </li>
             </ul>
           </div>
@@ -83,7 +83,9 @@ const Navbar = () => {
         </ul>
 
         <button className="btn bg-amber-600 border-0 shadow-none rounded-3xl hidden md:block">
-          <Link to="/products">Shop Now</Link>
+          <Link to="/cart">
+            <i class="bi bi-cart4 text-lg"></i>
+          </Link>
         </button>
       </div>
     </>

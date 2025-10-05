@@ -5,14 +5,14 @@ const Card = ({ product }) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <div className="card bg-red-200 w-auto h-fit py-4 md:w-50 lg:w-70 xl:w-90 shadow-md">
-      <figure className="max-h-100 md:max-h-auto">
+    <div className="card bg-red-200  py-4 md:w-50 max-h-[90vh] lg:w-70 xl:w-90 shadow-md">
+      <figure className=" md:max-h-auto">
         <img src={product.image} alt="Shoes" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{product.ItemCode}</h2>
         <h2 className="card-title">{product.item}</h2>
-        <p className="text-orange-600 font-bold">
+        <p className="text-orange-600 font-semibold">
           ₱ {""}
           {product.price}.00
         </p>
@@ -23,10 +23,10 @@ const Card = ({ product }) => {
         <p className="text-gray-500 hidden ">{product.description}</p>
         <div className="card-actions justify-center">
           <button
-            className="btn bg-orange-600 border-0 shadow-none"
+            className="bg-blue-600 text-white px-2 py-1 rounded hover:bg-blue-700"
             onClick={() => setModalOpen(true)}
           >
-            Buy Now
+            Add to Cart
           </button>
         </div>
       </div>
@@ -41,6 +41,7 @@ const Card = ({ product }) => {
           brand: product.brand,
           category: product.category,
           price: product.price,
+          _id: product._id,
         }}
       />
     </div>

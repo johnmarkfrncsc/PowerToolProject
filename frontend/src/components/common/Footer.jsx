@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="w-full footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-2 md:hidden">
+      <footer className=" w-full footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-2 md:hidden">
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} - All right reserved by{" "}
