@@ -4,10 +4,30 @@ import dotenv from "dotenv";
 import { MongoClient, ServerApiVersion } from "mongodb";
 import user from "./src/routes/userRoute.js"; // Adjust the path as necessary
 import items from "./src/routes/itemRoute.js"; // Adjust the path as necessary
+import cartRoute from "./src/routes/cartRoute.js";
 
 // Load environment variables
 dotenv.config();
 
+import mongoose from "mongoose";
+
+// Connect Mongoose to MongoDB
+mongoose
+  .connect(
+    process.env.MONGO_URI ||
+      "mongodb+srv://admin:admin123@mongo.byfu0cx.mongodb.net/?retryWrites=true&w=majority&appName=Mongo",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
+  .then(() => console.log("✅ Mongoose connected to MongoDB!"))
+  .catch((err) => {
+    console.error("❌ Mongoose connection error:", err);
+    process.exit(1);
+  });
+
+///
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -62,6 +82,9 @@ async function connectToMongoDB() {
     process.exit(1);
   }
 }
+
+// ...existing code...
+app.use("/api/cart", cartRoute);
 
 // Basic routes
 app.get("/", (req, res) => {

@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
+import axios from "axios";
 
 const CartContext = createContext();
 
@@ -7,7 +8,7 @@ export const useCart = () => useContext(CartContext);
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
-  const addToCart = (product) => {
+  const addToCart = async (product) => {
     setCart((prev) => {
       const existing = prev.find((item) => item._id === product._id);
       if (existing) {
@@ -19,6 +20,15 @@ export const CartProvider = ({ children }) => {
       }
       return [...prev, { ...product, quantity: 1 }];
     });
+    try {
+      await axios.post("http://localhost:5000/api/cart/add", {
+        userId: "USER_ID", // Replace with actual user id
+        productId: product._id,
+        quantity: 1,
+      });
+    } catch (err) {
+      console.error("Failed to store cart item:", err);
+    }
   };
 
   const updateQuantity = (id, amount) => {
