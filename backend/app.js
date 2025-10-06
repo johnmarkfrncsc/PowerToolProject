@@ -5,11 +5,11 @@ import { MongoClient, ServerApiVersion } from "mongodb";
 import user from "./src/routes/userRoute.js"; // Adjust the path as necessary
 import items from "./src/routes/itemRoute.js"; // Adjust the path as necessary
 import cartRoute from "./src/routes/cartRoute.js";
+//
+import mongoose from "mongoose";
 
 // Load environment variables
 dotenv.config();
-
-import mongoose from "mongoose";
 
 // Connect Mongoose to MongoDB
 mongoose
@@ -28,6 +28,7 @@ mongoose
   });
 
 ///
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -46,6 +47,7 @@ app.use(express.urlencoded({ extended: true }));
 //ROUTES
 app.use("/users", user);
 app.use("/items", items);
+app.use("/cart", cartRoute);
 
 // MongoDB connection
 const uri =

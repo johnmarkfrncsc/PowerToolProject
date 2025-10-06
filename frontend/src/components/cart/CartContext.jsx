@@ -21,8 +21,8 @@ export const CartProvider = ({ children }) => {
       return [...prev, { ...product, quantity: 1 }];
     });
     try {
-      await axios.post("http://localhost:5000/api/cart/add", {
-        userId: "USER_ID", // Replace with actual user id
+      await axios.post("http://localhost:3000/api/cart/add", {
+        userId: "689616100fa14238549a5721", // Replace with actual user id
         productId: product._id,
         quantity: 1,
       });
